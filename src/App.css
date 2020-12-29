@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --box-shadow: 0 20px 20px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --primary: #9370DB;
+  --secondary: #FF6F61;
+  --grey: #888;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  margin: 30px auto;
+  width: 350px;
+}
+
+h1 {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+h3 {
+  border-bottom: 1px solid #bbb;
+  padding-bottom: 5px;
+  margin: 40px 0 10px;
+}
+
+h4 {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.balance{
+  color: var(--grey);
+	font-size: 25px;
+	font-weight: 900;
+	background-color: #DFDFDF;
+	padding: 10px 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+.income-container {
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  border-right: 8px solid #8A2BE2;
+  border-radius: 8px;
+}
+
+.income-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.income-container > div:first-of-type {
+  border-right: 1px solid #dedede;
+}
+
+.form-wrapper {
+  grid-column: 2 / -1;
+  grid-row: 2 / 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  grid-column-gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.income {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.expense {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+}
+
+.display-income-amount{
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  color: #2ecc71;
+}
+
+.display-expense-amount{
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 5px 0;
+  color: #FF0000;
+}
+
+.transactions-container{
+  display: inline-grid;
+  grid-template-columns: repeat(1,2fr);
+}
+
+.transactions-container .transactions-income-container {
+  display: grid;
+  margin-right: 30px;
+}
+
+.transactions-container .transactions-expense-container {
+  display: grid;
+  margin-left: 30px;
+
+}
+
+.transaction-list {
+  display: grid;
+  padding: 0;
+}
+
+.transaction-list li {
+  background-color: #FFFFFF;
+  box-shadow: var(--box-shadow);
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  width: 145px;
+  margin-top: 10px;
+}
+
+.transaction-list li.expense {
+  border-right: 8px solid #FF0000;
+}
+
+.transaction-list li.income {
+  border-right: 8px solid #2ecc71;
+}
+
+.delete-item {
+  cursor: pointer;
+  background-color:#17202A;
+  border: 0;
+  border-radius: 50%;
+  color: #FF0000;
+  font-size: 30px;
+  line-height: 20px;
+  padding: 5px 5px;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translate(-100%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.transaction-list li:hover .delete-item {
+  opacity: 1;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
+.button-submit {
+  cursor: pointer;
+  background-image: linear-gradient(to right, var(--primary) 50%, var(--primary) 50%, var(--secondary));
+	background-size: 200%;
+	background-position: 0%;  box-shadow: var(--box-shadow);
+  color: #000000;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.button-submit:hover{
+  background-position: 100%;
+	color: #FFF;
+}
