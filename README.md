@@ -1,4 +1,4 @@
-Based on youtube's Traversy Media's [Expense Tracker](https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLlOZbI-3sStA5rU-Jw9WhzKAyCsH8UNvA&index=4&t=782s)
+A simple Expense Tracker in React.js. Based on youtube's Traversy Media's [Expense Tracker](https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLlOZbI-3sStA5rU-Jw9WhzKAyCsH8UNvA&index=4&t=782s)
 
 # Getting Started with Create React App
 
