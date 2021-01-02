@@ -1,6 +1,6 @@
 import { ACTIONS } from "./Actions";
 
-// maintains state change on specific event
+// Maintains state change on specific event
 export default (state,action) => {
     switch(action.type)
     {

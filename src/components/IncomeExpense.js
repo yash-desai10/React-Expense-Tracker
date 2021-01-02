@@ -13,7 +13,7 @@ const IncomeExpense = () => {
     const totalExpense=expenseAmounts.reduce((accumulator,item) => (accumulator+=item),0).toFixed(2);
 
     return (
-        <div className="income-container">
+        <div className="income-expense-container">
             <div>
                 <h4>Income</h4>
                 <p className="display-income-amount">${totalIncome}</p>
@@ -22,7 +22,7 @@ const IncomeExpense = () => {
                 <h4>Expense</h4>
                 <p className="display-expense-amount">${totalExpense}</p>
             </div>
-      </div>
+        </div>
     )
 }
 

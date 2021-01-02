@@ -2,20 +2,19 @@ import React, {useState,useContext} from 'react'
 import {GlobalContext} from '../context/GlobalState';
 import AddTranscationHeader from './AddTranscationHeader';
 
-
 const AddTransaction = () => {
 
-    const [incomeDescription,setIncomeDescription]=useState(""); // current state for income description
-    const [incomeAmount,setIncomeAmount]=useState(0); // current state for income amount
+    const [incomeDescription,setIncomeDescription]=useState(""); // Current state for income description
+    const [incomeAmount,setIncomeAmount]=useState(0); // Current state for income amount
 
-    const [expenseDescription,setExpenseDescription]=useState(""); // current state for income description
-    const [expenseAmount,setExpenseAmount]=useState(0); // current state for income amount
+    const [expenseDescription,setExpenseDescription]=useState(""); // Current state for income description
+    const [expenseAmount,setExpenseAmount]=useState(0); // Current state for income amount
 
     const {addIncome,addExpense}=useContext(GlobalContext); // Importing Global State
 
 
     const onSubmitIncome = (event) => {
-        event.preventDefault(); // prevent browser from REFRESH / RELOAD
+        event.preventDefault(); // Prevent browser from REFRESH / RELOAD
 
         const newIncomeTransaction= {
             id: Math.floor(Math.random() * 1000),
@@ -24,12 +23,12 @@ const AddTransaction = () => {
         }  
     addIncome(newIncomeTransaction);
     
-    setIncomeAmount(0); // clear input field
-    setIncomeDescription(""); // clear input field
+    setIncomeAmount(0); // Clear input field
+    setIncomeDescription(""); // Clear input field
     }
 
     const onSubmitExpense = (event) => {
-        event.preventDefault(); // prevent browser from REFRESH / RELOAD
+        event.preventDefault(); // Prevent browser from REFRESH / RELOAD
 
         const newExpenseTransaction= {
             id: Math.floor(Math.random() * 1000),

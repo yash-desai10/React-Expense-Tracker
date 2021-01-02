@@ -3,7 +3,7 @@ import {GlobalContext} from '../context/GlobalState';
 import TransactionHistory from './TransactionHistory';
 import ExpenseHistoryHeader from './ExpenseHistoryHeader';
 
-const Expense = () => {
+const ExpenseHistory = () => {
 
     const {expenseTransactions}=useContext(GlobalContext);
 
@@ -21,4 +21,4 @@ const Expense = () => {
     )
 }
 
-export default Expense
+export default ExpenseHistory
