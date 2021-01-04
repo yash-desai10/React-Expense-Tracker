@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/yash-desai10/react-expense-tracker/badge)](https://www.codefactor.io/repository/github/yash-desai10/react-expense-tracker)
+
 A simple Expense Tracker in React.js. Based on youtube's Traversy Media's [Expense Tracker](https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLlOZbI-3sStA5rU-Jw9WhzKAyCsH8UNvA&index=4&t=782s)
 
 # React Expense Tracker (React Hooks + Context API)
