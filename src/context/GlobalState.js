@@ -4,6 +4,9 @@ import AppReducer from './AppReducer';
 
 // Initial State
 const initialTransactionState = {
+
+    // if there are no values stored in local storage, 
+    // it will return an empty array else it will return the stored values
      incomeTransactions : JSON.parse(localStorage.getItem("incomeTransaction")) || [],
      expenseTransactions : JSON.parse(localStorage.getItem("expenseTransaction")) || []
 }

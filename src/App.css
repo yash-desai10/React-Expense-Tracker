@@ -4,7 +4,7 @@
   --box-shadow: 0 20px 20px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   --primary: #9370DB;
   --secondary: #fc3734;
-  --grey: #888;
+  --grey: rgb(155, 153, 153)
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color:#f7f7f7;
+  background-color:#f4f8fc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,21 +99,21 @@ h4 {
   grid-row: 1 / -1;
 }
 
-.display-income-amount{
+.display-income-amount {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
   color: #2ecc71;
 }
 
-.display-expense-amount{
+.display-expense-amount {
   font-size: 20px;
   letter-spacing: 1px;
   margin: 5px 0;
   color: #fc3734;
 }
 
-.transactions-container{
+.transactions-container {
   display: inline-grid;
   grid-template-columns: repeat(1,2fr);
 }
@@ -209,4 +209,10 @@ input[type='number'] {
 .button-submit:hover{
   background-position: 100%;
 	color: #FFF;
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 304px;
+    }
 }
