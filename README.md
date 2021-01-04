@@ -2,6 +2,8 @@
 
 A simple Expense Tracker in React.js. Based on youtube's Traversy Media's [Expense Tracker](https://www.youtube.com/watch?v=XuFDcZABiDQ&list=PLlOZbI-3sStA5rU-Jw9WhzKAyCsH8UNvA&index=4&t=782s)
 
+Live Demo [Click Here](https://yash-desai10.github.io/React-Expense-Tracker/)
+
 # React Expense Tracker (React Hooks + Context API)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,3 +74,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Additions to the original version
+* Seperate input form for income and expense.
+* Storing transaction amounts in local storage.
+* UI changes.
+* Decoupled components.
+* Used conditional rendering to display income and expense history.
