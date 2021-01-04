@@ -23,7 +23,7 @@ body {
 }
 
 .container {
-  width: 80%;  
+  width: 80%;
   height: 100vh;
 }
 
@@ -48,7 +48,7 @@ h4 {
 	font-size: 25px;
 	font-weight: 900;
 	background-color: #DFDFDF;
-	padding: 10px 10px;
+	padding: 10px;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ h4 {
 .income-expense-container {
   background-color: #ffffff;
   box-shadow: var(--box-shadow);
-  padding: 20px 10px 10px 10px;
+  padding: 20px 10px 10px;
   display: flex;
   justify-content: space-between;
   margin: 30px 0;
@@ -163,7 +163,7 @@ h4 {
   color: #FF0000;
   font-size: 30px;
   line-height: 20px;
-  padding: 5px 5px;
+  padding: 5px;
   position: absolute;
   top: 55%;
   left: 0;
