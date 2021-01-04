@@ -74,3 +74,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Additions to the original version
+* Seperate input form for income and expense.
+* Storing transaction amounts in local storage.
+* UI changes.
+* Decoupled components.
+* Used conditional rendering to display income and expense history.
