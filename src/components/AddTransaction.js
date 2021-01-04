@@ -5,10 +5,10 @@ import AddTranscationHeader from './AddTranscationHeader';
 const AddTransaction = () => {
 
     const [incomeDescription,setIncomeDescription]=useState(""); // Current state for income description
-    const [incomeAmount,setIncomeAmount]=useState(0); // Current state for income amount
+    const [incomeAmount,setIncomeAmount]=useState(""); // Current state for income amount
 
     const [expenseDescription,setExpenseDescription]=useState(""); // Current state for income description
-    const [expenseAmount,setExpenseAmount]=useState(0); // Current state for income amount
+    const [expenseAmount,setExpenseAmount]=useState(""); // Current state for income amount
 
     const {addIncome,addExpense}=useContext(GlobalContext); // Importing Global State
 
@@ -23,7 +23,7 @@ const AddTransaction = () => {
         }  
     addIncome(newIncomeTransaction);
     
-    setIncomeAmount(0); // Clear input field
+    setIncomeAmount(""); // Clear input field
     setIncomeDescription(""); // Clear input field
     }
 
@@ -38,7 +38,7 @@ const AddTransaction = () => {
 
     addExpense(newExpenseTransaction);
 
-    setExpenseAmount(0); // clear input field
+    setExpenseAmount(""); // clear input field
     setExpenseDescription(""); // clear input field
     }
 
@@ -49,7 +49,7 @@ const AddTransaction = () => {
             <form onSubmit={onSubmitIncome}>
                 <div className="form-control income">
                     <label htmlFor="amount">Income Amount</label>
-                    <input type="number" value={incomeAmount} onChange = {(event) => setIncomeAmount(event.target.value)} placeholder="Enter income amount..." />
+                    <input type="number" value={incomeAmount} onChange = {(event) => setIncomeAmount(event.target.value)} placeholder="Enter income..." />
                     <label htmlFor="description">Description</label>
                     <input type="text" value={incomeDescription} onChange = {(event) => setIncomeDescription(event.target.value)} placeholder="Enter description..." />
                 </div>
@@ -59,7 +59,7 @@ const AddTransaction = () => {
             <form onSubmit={onSubmitExpense}>
                 <div className="form-control expense">
                     <label htmlFor="amount">Expense Amount</label>
-                    <input type="number" value={expenseAmount} onChange = {(event) => setExpenseAmount(event.target.value)} placeholder="Enter expense amount..." />
+                    <input type="number" value={expenseAmount} onChange = {(event) => setExpenseAmount(event.target.value)} placeholder="Enter expense..." />
                     <label htmlFor="description">Description</label>
                     <input type="text" value={expenseDescription} onChange = {(event) => setExpenseDescription(event.target.value)} placeholder="Enter description..." />
                 </div>
